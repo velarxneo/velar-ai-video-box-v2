@@ -1,0 +1,26 @@
+{
+    "id": "wan22_ti2v_5b_fp16",
+    "name": "Wan 2.2 TI2V 5B (FP16, single-file, low VRAM)",
+    "version": "2.2",
+    "notes": "~12 GB total. Single combined text+image-to-video model, no high/low-noise MoE pair. Good fit for smaller GPUs.",
+    "models": [
+        {
+            "filename": "wan2.2_ti2v_5B_fp16.safetensors",
+            "folder": "diffusion_models",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+            "required": true
+        },
+        {
+            "filename": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "folder": "text_encoders",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "required": true
+        },
+        {
+            "filename": "wan2.2_vae.safetensors",
+            "folder": "vae",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+            "required": true
+        }
+    ]
+}
