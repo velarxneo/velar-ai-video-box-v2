@@ -2,7 +2,7 @@
     "id": "wan22_t2v_14b_fp8",
     "name": "Wan 2.2 Text-to-Video 14B (FP8 scaled)",
     "version": "2.2",
-    "notes": "~37 GB total. Shares the text encoder and VAE with the I2V pack; already-downloaded shared files are skipped.",
+    "notes": "~38 GB total (~40 GB with the optional LightX2V 4-step LoRAs). Shares the text encoder and VAE with the I2V pack; already-downloaded shared files are skipped. The 14B A14B models pair with wan_2.1_vae.safetensors, not wan2.2_vae.safetensors (that one is only for the TI2V-5B model).",
     "models": [
         {
             "filename": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
@@ -23,10 +23,22 @@
             "required": true
         },
         {
-            "filename": "wan2.2_vae.safetensors",
+            "filename": "wan_2.1_vae.safetensors",
             "folder": "vae",
-            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
             "required": true
+        },
+        {
+            "filename": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors",
+            "folder": "loras",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors",
+            "required": false
+        },
+        {
+            "filename": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors",
+            "folder": "loras",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors",
+            "required": false
         }
     ]
 }
