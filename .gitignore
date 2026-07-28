@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Logs / exports
+*.log
+*.csv
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Runtime install target (ComfyUI itself, models, venv) - never commit these
+velar/
+ComfyUI/
+models/
+*.safetensors
+*.pt
+*.pth
+*.ckpt

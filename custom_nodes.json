@@ -1,0 +1,19 @@
+{
+    "nodes": [
+        {
+            "name": "ComfyUI-Manager",
+            "repo": "https://github.com/Comfy-Org/ComfyUI-Manager.git",
+            "required": true
+        },
+        {
+            "name": "ComfyUI-VideoHelperSuite",
+            "repo": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git",
+            "required": true
+        },
+        {
+            "name": "ComfyUI-WanVideoWrapper",
+            "repo": "https://github.com/kijai/ComfyUI-WanVideoWrapper.git",
+            "required": false
+        }
+    ]
+}
